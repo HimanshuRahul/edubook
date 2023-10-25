@@ -57,7 +57,7 @@ function Course() {
   );
 }
 
-function UpdateCard({ courseid, router }) {
+function UpdateCard({ courseid, router }: { courseid: any; router: any }) {
   const [courseDetails, setCourse] = useRecoilState(courseState);
   const course = courseDetails.course;
   const userEmail = useRecoilValue(userEmailState) || "";

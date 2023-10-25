@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
- export const getUser = (token: string, cb) => {
+ export const getUser = (token: string, cb:any) => {
      const SECRETADMIN = process.env["NEXT_PUBLIC_ADMIN_SECRET"]
      
     jwt.verify(token, SECRETADMIN!, (err, user) => {

@@ -8,16 +8,23 @@ import { isUserLoading, userState } from "store";
 import axios from "axios";
 import { useEffect } from "react";
 import Appbar from "@/components/Appbar";
+import { Router, useRouter } from "next/router";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter(); // Get the router object
+
   return (
     <RecoilRoot>
-      <App2 Component={Component} pageProps={pageProps} />
+      <App2
+        Component={Component}
+        pageProps={pageProps}
+        router={router as Router}
+      />
     </RecoilRoot>
   );
 }
 
-function App2({ Component, pageProps }) {
+function App2({ Component, pageProps }: AppProps) {
   const userLoading = useRecoilValue(isUserLoading);
   if (userLoading) {
     return (

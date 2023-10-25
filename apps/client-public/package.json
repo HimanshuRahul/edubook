@@ -1,0 +1,33 @@
+{
+  "name": "client-public",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3004",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^5.14.14",
+    "@mui/styles": "^5.14.14",
+    "@types/jsonwebtoken": "^9.0.3",
+    "@types/mongoose": "^5.11.97",
+    "axios": "^1.5.1",
+    "db": "*",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.1",
+    "next": "13.5.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "store": "*",
+    "ui": "*",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}
